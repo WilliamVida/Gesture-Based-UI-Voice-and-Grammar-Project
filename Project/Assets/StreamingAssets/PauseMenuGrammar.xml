@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<grammar xml:lang="en-US" root="pausemenu" tag-format="semantics/1.0" version="1.0"
+    xmlns="http://www.w3.org/2001/06/grammar">
+
+    <rule id="pausemenu">
+        <one-of>
+            <item>
+                <ruleref uri="#resume"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#menu"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#quit"></ruleref>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="resume">
+        <one-of>
+            <item>resume</item>
+            <item>resume the game</item>
+        </one-of>
+    </rule>
+
+    <rule id="menu">
+        <one-of>
+            <item>menu</item>
+            <item>to the menu</item>
+            <item>go to the menu</item>
+            <item>main menu</item>
+            <item>to the main menu</item>
+            <item>go to the main menu</item>
+        </one-of>
+    </rule>
+
+    <rule id="quit">
+        <one-of>
+            <item>quit</item>
+            <item>quit the game</item>
+            <item>click the quit button</item>
+            <item>click quit</item>
+        </one-of>
+    </rule>
+
+</grammar>

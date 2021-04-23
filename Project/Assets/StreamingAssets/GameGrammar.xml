@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<grammar xml:lang="en-US" root="game" tag-format="semantics/1.0" version="1.0"
+    xmlns="http://www.w3.org/2001/06/grammar">
+
+    <rule id="game">
+        <one-of>
+            <item>
+                <ruleref uri="#pause"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#move"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#speednormal"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#speedup"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#speeddown"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#stop"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#weaponone"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#weapontwo"></ruleref>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="pause">
+        <one-of>
+            <item>pause</item>
+            <item>pause the game</item>
+        </one-of>
+    </rule>
+
+    <rule id="move">
+        <one-of>
+            <item>move</item>
+        </one-of>
+    </rule>
+
+    <rule id="speednormal">
+        <one-of>
+            <item>normal speed</item>
+            <item>default speed</item>
+        </one-of>
+    </rule>
+
+    <rule id="speedup">
+        <one-of>
+            <item>move faster</item>
+            <item>go faster</item>
+            <item>faster</item>
+            <item>speed up</item>
+        </one-of>
+    </rule>
+
+    <rule id="speeddown">
+        <one-of>
+            <item>move slower</item>
+            <item>go slower</item>
+            <item>slower</item>
+            <item>speed down</item>
+            <item>slow down</item>
+        </one-of>
+    </rule>
+
+    <rule id="stop">
+        <one-of>
+            <item>stop</item>
+            <item>stop moving</item>
+        </one-of>
+    </rule>
+
+    <rule id="weaponone">
+        <one-of>
+            <item>weapon one</item>
+            <item>main weapon</item>
+            <item>fireball</item>
+            <item>primary weapon</item>
+        </one-of>
+    </rule>
+
+    <rule id="weapontwo">
+        <one-of>
+            <item>weapon two</item>
+            <item>secondary weapon</item>
+            <item>purple pearl</item>
+        </one-of>
+    </rule>
+
+</grammar>

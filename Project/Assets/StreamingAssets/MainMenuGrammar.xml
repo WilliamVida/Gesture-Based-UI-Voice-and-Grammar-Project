@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<grammar xml:lang="en-US" root="menu" tag-format="semantics/1.0" version="1.0"
+    xmlns="http://www.w3.org/2001/06/grammar">
+
+    <rule id="menu">
+        <one-of>
+            <item>
+                <ruleref uri="#play"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#instructions"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#back"></ruleref>
+            </item>
+
+            <item>
+                <ruleref uri="#quit"></ruleref>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="play">
+        <one-of>
+            <item>start</item>
+            <item>start a game</item>
+            <item>start the game</item>
+            <item>click the start button</item>
+            <item>play</item>
+            <item>play a game</item>
+            <item>play the game</item>
+            <item>click play</item>
+            <item>click the play button</item>
+        </one-of>
+    </rule>
+
+    <rule id="instructions">
+        <one-of>
+            <item>instructions</item>
+            <item>go to instructions</item>
+            <item>go to the instructions menu</item>
+            <item>click the instructions button</item>
+        </one-of>
+    </rule>
+
+    <rule id="back">
+        <one-of>
+            <item>back</item>
+            <item>go back</item>
+            <item>back to the main menu</item>
+            <item>click the back button</item>
+        </one-of>
+    </rule>
+
+    <rule id="quit">
+        <one-of>
+            <item>quit</item>
+            <item>quit the game</item>
+            <item>click the quit button</item>
+            <item>click quit</item>
+        </one-of>
+    </rule>
+
+</grammar>
